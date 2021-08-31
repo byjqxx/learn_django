@@ -1,0 +1,9 @@
+{% extends 'form_test/base.html' %}
+
+{% block content %}
+<form>
+    {% csrf_token %}
+    {{ loginform.as_ul }}
+    <input type="submit" name='submit'>
+</form>
+{% endblock content %}
