@@ -3,7 +3,7 @@
 {% block content %}
 <form method="POST" action=".">
     {% csrf_token %}
-    {{ loginform.as_ul }}
-    <input type="submit" value="登录">
+    {{ registerform.as_ul }}
+    <input type="submit" value='注册'>
 </form>
 {% endblock content %}

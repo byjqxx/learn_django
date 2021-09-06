@@ -1,0 +1,12 @@
+{% extends 'form_test/base.html' %}
+
+{% block content %}
+<div>
+    <li>{{ user_info.username }}</li>
+    <li>{{ user_info.useremail }}</li> 
+</div>
+<form method="POST" action="/form/logout">
+    {% csrf_token %}
+    <button type="submit">退出</button>
+</form>   
+{% endblock content %}
